@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
@@ -9,6 +11,14 @@ import PlacesRoute from "./pages/PlacesRoute";
 import NoPage from "./pages/NoPage";
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 100,
+      duration: 700,
+      easing: "ease-in",
+      delay: 100,
+    });
+  });
   return (
     <div>
       <BrowserRouter>
