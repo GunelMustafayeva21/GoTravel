@@ -1,6 +1,7 @@
 import React from "react";
 import SeaVideo from "../assets/video/main.mp4";
 import Hero from "../components/Hero/Hero";
+import Places from "../components/Places/Places";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
           {/* Cover of Video Element */}
           <Hero />
         </div>
+        <Places/>
       </div>
     </>
   );

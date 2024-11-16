@@ -8,21 +8,21 @@ const Hero = () => {
         {/* For text and white box */}
         <div className="container grid grid-cols-1 gap-4">
           {/* Heading Text Element */}
-          <div className="text-white"data-aos="fade-up"
-              data-aos-delay="300">
-            <p className="text-xl" >Our packages</p>
-            <p
-              className="font-bold text-2xl sm:text-3xl"
-            >
+          <div className="text-white" data-aos="fade-up" data-aos-delay="300">
+            <p className="text-xl">Our packages</p>
+            <p className="font-bold text-2xl sm:text-3xl">
               Search Your Destionation
             </p>
           </div>
 
           {/* Form Element */}
-          <div className="bg-white rounded-md p-4 relative space-y-4" data-aos="fade-up"
-              data-aos-delay="500">
+          <div
+            className="bg-white rounded-md p-4 relative space-y-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div className="py-3 grid grid-cols-1 md:grid-cols-3 sm:gap-3 gap-1">
-              <div >
+              <div>
                 <label
                   htmlFor="destination"
                   className="opacity-60 ml-1 text-lg"
@@ -38,7 +38,7 @@ const Hero = () => {
                 />
               </div>
 
-              <div >
+              <div>
                 <label htmlFor="date" className="opacity-60 ml-1 text-lg">
                   Date
                 </label>
@@ -50,7 +50,7 @@ const Hero = () => {
                 />
               </div>
 
-              <div >
+              <div>
                 <label
                   htmlFor="price"
                   className="opacity-60 ml-1 text-lg flex justify-between items-center"
@@ -70,7 +70,6 @@ const Hero = () => {
                   onChange={(e) => setPriceValue(e.target.value)}
                 />
               </div>
-              
             </div>
             {/* Button Element */}
             <button
